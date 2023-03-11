@@ -1,0 +1,31 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: salem1669_development
+  host: localhost
+  pool: 5
+  username: postgres
+  password: brandon1997
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: salem1669_test
+  host: localhost
+  pool: 5
+  username: postgres
+  password: brandon1997
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: salem1669_production
+  host: localhost
+  pool: 5
+  username: postgres
+  password: brandon1997
