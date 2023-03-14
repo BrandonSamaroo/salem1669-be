@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :games
+  resources :tryal_cards
+  resources :playing_cards
+  resources :players
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

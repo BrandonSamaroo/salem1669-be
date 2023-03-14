@@ -1,0 +1,2 @@
+class TryalCard < ApplicationRecord
+end
